@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="p-4 bg-light">
+
+<div class="d-flex justify-content-end">
+  <a href="/logout" class="btn btn-danger mb-3">Logout</a>
+</div>
+
+<h1 class="text-center text-dark mb-4">Page d'Administration</h1>
+
+<div class="container">
+  <div class="list-group">
+    <a href="/medecinsList" class="list-group-item list-group-item-action list-group-item-light">
+      <button class="btn btn-outline-primary w-100">La Liste des médecins</button>
+    </a>
+    <a href="/createMedecin" class="list-group-item list-group-item-action list-group-item-light">
+      <button class="btn btn-outline-primary w-100">Créer un médecin</button>
+    </a>
+    <a href="/patientsList" class="list-group-item list-group-item-action list-group-item-light">
+      <button class="btn btn-outline-primary w-100">La Liste des patients</button>
+    </a>
+    <a href="/createPatient" class="list-group-item list-group-item-action list-group-item-light">
+      <button class="btn btn-outline-primary w-100">Créer un patient</button>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

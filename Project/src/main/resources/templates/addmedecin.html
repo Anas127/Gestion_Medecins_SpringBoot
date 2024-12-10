@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajout Medecins</title>
+  <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="card m-3 p-3">
+  <h2>Ajout Medecins</h2>
+  <form method="post" th:action="@{/save}">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Name</label>
+      <input id="nom" type="text" name="nom" class="form-control" th:value="${medecin.nom}" required>
+    </div>
+    <div class="mb-3">
+      <label for="salaire" class="form-label">Salaire</label>
+      <input id="salaire" type="text" name="salaire" class="form-control" th:value="${medecin.salaire}" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Create</button>
+  </form>
+</div>
+</body>
+</html>
